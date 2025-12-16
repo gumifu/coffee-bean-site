@@ -1,1 +1,175 @@
 # coffee-bean-site
+
+# Coffee Beans Website × Three.js Research
+
+## 1. Project Overview
+
+This project is a **multi-page coffee beans introduction website** created as part of a school assignment and a **research exercise using Three.js**.
+
+The goal is to clearly present information about coffee beans using standard **HTML / CSS / JavaScript**, while selectively integrating **Three.js and GSAP** to explore how 3D visuals and motion can enhance user experience without harming readability or performance.
+
+The site prioritizes:
+
+- Semantic HTML and content clarity (assignment requirement)
+- Lightweight, focused use of 3D (research requirement)
+- Performance and accessibility awareness
+
+---
+
+## 2. Objectives
+
+- Build a multi-page website using semantic HTML structure
+- Introduce coffee beans in an informative and visually engaging way
+- Research the use of **Three.js** for subtle 3D expression on the web
+- Use **GSAP** to create smooth, controlled animations
+- Maintain usability even when JavaScript or animations are reduced
+
+---
+
+## 3. Target Users
+
+- Students or beginners interested in coffee
+- Users who want a simple introduction to coffee beans and brewing
+- Evaluators (instructors) reviewing HTML/CSS structure and design decisions
+
+---
+
+## 4. Site Structure (Pages)
+
+### 4.1 Home – Coffee Beans Overview (`index.html`)
+
+**Purpose:** Introduce coffee beans and set the visual tone of the site
+
+**Main Content:**
+
+- Hero section with a subtle Three.js 3D coffee bean object
+- Short introduction: What coffee beans are and why people enjoy coffee
+- Navigation links to other pages
+
+**Three.js Usage:**
+
+- Single low‑poly coffee bean model
+- Slow idle rotation
+- Lighting and material changes based on roast level
+
+**GSAP Usage:**
+
+- Fade-in of hero text
+- Scroll-triggered minor rotation or camera movement
+
+---
+
+### 4.2 Coffee Beans Types (`beans.html`)
+
+**Purpose:** Explain different types of coffee beans
+
+**Main Content:**
+
+- Explanation of Arabica and Robusta
+- Comparison table (taste, caffeine, origin)
+- Images with alt text
+
+**Interaction:**
+
+- No 3D rendering (content-focused page)
+- Simple CSS hover effects only
+
+---
+
+### 4.3 Brewing Methods (`brewing.html`)
+
+**Purpose:** Explain basic coffee brewing methods
+
+**Main Content:**
+
+- Step-by-step brewing instructions
+- Icons or images for each step
+- Short tips for beginners
+
+**Interaction:**
+
+- GSAP used for step-by-step reveal animation
+- No Three.js to maintain performance
+
+---
+
+## 5. Technical Stack
+
+### Core Technologies
+
+- HTML5 (semantic structure)
+- CSS3 (Flexbox / Grid)
+- JavaScript (Vanilla)
+
+### Libraries
+
+- **Three.js**: 3D rendering (Home page only)
+- **GSAP**: Animation control (fade, scroll effects)
+
+### Development Style
+
+- No heavy frameworks
+- ES Modules (`type="module"`)
+- CDN-based library loading
+
+---
+
+## 6. Folder Structure (Planned)
+
+```
+/coffee-site
+  ├─ index.html
+  ├─ beans.html
+  ├─ brewing.html
+  ├─ css/
+  │   └─ style.css
+  ├─ js/
+  │   ├─ main.js        // Three.js scene
+  │   └─ animation.js   // GSAP animations
+  └─ assets/
+      ├─ images/        //Unsplash
+      └─ models/        //Blender
+```
+
+---
+
+## 7. Design Guidelines
+
+- Color palette inspired by coffee tones (brown, beige, cream)
+- Clear typography with strong heading hierarchy
+- Consistent navigation on all pages
+- White space prioritized for readability
+
+---
+
+## 8. Accessibility & Performance Considerations
+
+- One `<h1>` per page
+- All images include `alt` attributes
+- Navigation usable without JavaScript
+- `prefers-reduced-motion` respected (animations reduced or disabled)
+- Three.js runs only on one page to limit GPU load
+
+---
+
+## 9. Research Focus (Three.js & GSAP)
+
+### Research Questions
+
+- How can 3D visuals enhance a food-related website?
+- How much motion is appropriate without distracting users?
+- How can GPU-heavy content be minimized in real websites?
+
+### Findings (Expected)
+
+- Subtle motion increases engagement
+- Limited 3D usage improves performance
+- Clear separation between content and visual effects is effective
+
+---
+
+## 10. Conclusion
+
+This project balances **educational content** and **technical experimentation**. By limiting Three.js and GSAP to specific contexts, the site demonstrates how advanced web technologies can be used responsibly and meaningfully within standard HTML/CSS assignments.
+
+The project serves both as a functional coffee introduction website and as a practical research case for modern front-end techniques.
